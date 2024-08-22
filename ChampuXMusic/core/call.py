@@ -29,7 +29,7 @@ from ChampuXMusic.utils.database import (
 )
 from ChampuXMusic.utils.exceptions import AssistantErr
 from ChampuXMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from ChampuXMusic.utils.inline.play import stream_markup, stream_markup2
+from ChampuXMusic.utils.inline.play import stream_markup
 from ChampuXMusic.utils.stream.autoclear import auto_clean
 from ChampuXMusic.utils.thumbnails import get_thumb
 
