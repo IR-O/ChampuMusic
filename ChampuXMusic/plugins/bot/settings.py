@@ -38,7 +38,7 @@ from ChampuXMusic.utils.inline.start import private_panel
 
 
 @app.on_message(
-    filters.command(["settings", "setting"]) & filters.group & ~BANNED_USERS
+    filters.command(["isettings", "isetting"]) & filters.group & ~BANNED_USERS
 )
 @language
 async def settings_mar(client, message: Message, _):
