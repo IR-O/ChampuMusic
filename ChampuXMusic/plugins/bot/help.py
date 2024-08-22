@@ -18,7 +18,7 @@ SPAM_THRESHOLD = 2
 SPAM_WINDOW_SECONDS = 5
 
 
-@app.on_message(filters.command(["help"]) & ~BANNED_USERS)
+@app.on_message(filters.command(["ihelp"]) & ~BANNED_USERS)
 async def clean(_, m):
     text, keyboard = await help_parser(m.from_user.mention)
     await m.reply_photo(photo=config.START_IMG_URL, caption=text, reply_markup=keyboard)
